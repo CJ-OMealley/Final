@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Rabbit Hole</title>
+    <style>
+        body {
+            background-image: url('https://media0.giphy.com/media/l0NwFlAqByzLxYnLO/giphy.gif?cid=6c09b952g4wn503gb2gohj3ms5tt8tvppr2lnegxexyy1w60&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+            background-color: white;
+            font-family: Papyrus;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #89CFF0;
+            color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            transition: font-size 0.3s;
+        }
+
+      
+        .mission {
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            grid-gap: 40px;
+            margin: 30px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+       
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        img {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+     
+
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <h1>The Rabbit Hole</h1>
+    </header>
+
+    <div class="mission">
+        <h2>Project Mission</h2>
+        <p>We at The Rabbit Hole are on a mission to push quality entertainment and educational resources to kids throughout America. Our goal is to mold our children into the perfect representation of educational and American freedoms.</p>
+    </div>
+
+    <div class="content">
+        <section style="text-align: center;">
+            <a href="edu">
+                <h3>Education</h3>
+            </a>
+            <img src="https://media.istockphoto.com/id/614013940/photo/teacher-and-kids-lying-on-floor-using-digital-tablet.jpg?s=612x612&w=0&k=20&c=p5G5jaBORt4wuT3A9-YfAISWHzcBLbP_xvoG5ILxzhk=" alt="school">
+        </section>
+
+       
+        <section style="text-align: center;">
+            <a href="social.html">
+                <h3>Social Media</h3>
+            </a>
+            <img src="https://play-lh.googleusercontent.com/Y2RvTha9Vgt-ROmUjcfqX9EpG5OGgy2RL5cIMF_Bp4Mk2f4i4bnfyvkvuW1bOs9nuA=w526-h296-rw" alt="apps">
+        </section>
+    </div>
+
+    <script>
+        const header = document.getElementById("header");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.style.padding = "10px";
+                header.style.fontSize = "2em";  
+            } else {
+                header.style.padding = "40px";
+                header.style.fontSize = "3em";  
+            }
+        };
+    </script>
+
+</body>
+</html>
+    
